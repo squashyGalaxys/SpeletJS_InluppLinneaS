@@ -52,13 +52,10 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = null;
         disableDeck = false; // Tillåt nya klick
     } else {
+        
         setTimeout(() => {
-            cardOne.classList.add("shake");
-            cardTwo.classList.add("shake");
-        }, 400);
-        setTimeout(() => {
-            cardOne.classList.remove("shake", "flip");
-            cardTwo.classList.remove("shake", "flip");
+            cardOne.classList.remove("flip");
+            cardTwo.classList.remove("flip");
             cardOne = cardTwo = null;
             disableDeck = false; // Tillåt nya klick
         }, 1200);
